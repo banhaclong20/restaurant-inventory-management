@@ -7,6 +7,7 @@ import {
   Text,
   VisuallyHidden,
   useColorModeValue,
+  Flex,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -59,13 +60,13 @@ export default function LargeWithNewsletter() {
             <Link href="/locations">Locations</Link>
             <Link href="/testimonials">Testimonials</Link>
           </Stack>
-          <Stack align="center" spacing={6}>
-            <Box align="center" mb="2">
+          <Flex align="center" flexDir="column" textAlign="center">
+            <Box mb="2">
               <h2 className="footer-logo">Oishii Restaurants</h2>
               <Text fontSize="sm">info@oishiirestaurants.com</Text>
             </Box>
 
-            <Text fontSize="sm" style={{ margin: 0 }}>
+            <Text fontSize="sm" mb="2">
               © {year} Oishii Restaurant. All rights reserved
             </Text>
             <Stack direction="row" spacing={6}>
@@ -76,7 +77,7 @@ export default function LargeWithNewsletter() {
                 <FaInstagram />
               </SocialButton>
             </Stack>
-          </Stack>
+          </Flex>
 
           <Stack align="center">
             <Link href="/locations?from=promotion">Promotions</Link>
