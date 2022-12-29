@@ -1,0 +1,47 @@
+/* Global Styling here */
+
+/* Header */
+
+.banner-top {
+  justify-content: center;
+  background: #3f3f3f !important;
+  text-align: center;
+}
+
+.location-banner-top {
+  background-color: #505b6d !important;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-slider-nav:hover {
+  color: black
+}
+
+.locations-nav {
+  padding: 8px 15px;
+  border-radius: 25px;
+  background: #f5821f;
+  color: #FFF;
+}
+
+/* Footer */
+.footer {
+  background-color: #121825;
+  background-image: url('/assets/footer-bg.jpg');
+  background-position: center;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  color: #f5821f;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-weight: 600;
+}
+
+.image-box-badge {
+  top: -2.2rem;
+  position: relative;
+  left: 0.5rem;
+}
+
