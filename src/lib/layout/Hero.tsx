@@ -6,22 +6,21 @@ import {
   Heading,
   Text,
   Container,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
 
 const settings = {
-  dots: true,
   arrows: false,
   fade: true,
   infinite: true,
   autoplay: true,
-  speed: 500,
+  speed: 2000,
   autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  adaptiveHeight: true,
 };
 
 export default function CaptionCarousel() {
@@ -34,18 +33,27 @@ export default function CaptionCarousel() {
     lg: "600px",
     xl: "700px",
   });
-  const slidetopContent = useBreakpointValue({ base: "28%", md: "50%" });
+  const slidetopContent = useBreakpointValue({
+    base: "25%",
+    md: "35%",
+    lg: "50%",
+  });
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
+
+  const slide1 = isLargerThan800
+    ? "/assets/hero-bg-1.jpg"
+    : "/assets/hero-bg-1-mobile.jpg";
 
   const cards = [
     {
       title: "Sushi & Pan-Asian Cuisine",
       text: "Authentic Tastes. Authentic Atmosphere.",
-      image: "/assets/hero-bg-1.jpg",
+      image: slide1,
     },
     {
       title: "We can't wait to serve you!",
       text: "Count on us for delivery, take-out and curbside pick up with Online Ordering!",
-      image: "/assets/hero-bg-2.jpg",
+      image: "/assets/contact-us-bg.jpg",
     },
   ];
 
@@ -84,7 +92,6 @@ export default function CaptionCarousel() {
         {cards.map((card) => (
           <Box
             key={card.title}
-            height="6xl"
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
