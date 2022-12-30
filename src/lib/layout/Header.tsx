@@ -301,7 +301,7 @@ export default function DesktopNavWithSubnavigation() {
               <Image
                 width="122px"
                 alt="Oishii Restaurants Logo"
-                src="/assets/logo.png"
+                src="/assets/oishii-logo.jpg"
                 onClick={() => router.push("/")}
               />
             </Flex>

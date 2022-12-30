@@ -33,7 +33,7 @@ const Home = () => {
       <Hero />
       <Feature />
       <CTABanner
-        bgImage="/assets/sushi-feature-bg-full.jpg"
+        bgImage="/assets/sushi-feature-bg.jpg"
         headingText="Wide variety of sushi, sashimi and more. Best quality sushi at an efficient time"
         buttons={btns}
       />
