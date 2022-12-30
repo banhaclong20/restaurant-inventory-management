@@ -6,7 +6,6 @@ import {
   Heading,
   Text,
   Container,
-  useMediaQuery,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
@@ -38,17 +37,12 @@ export default function CaptionCarousel() {
     md: "35%",
     lg: "50%",
   });
-  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
-
-  const slide1 = isLargerThan800
-    ? "/assets/hero-bg-1.jpg"
-    : "/assets/hero-bg-1-mobile.jpg";
 
   const cards = [
     {
       title: "Sushi & Pan-Asian Cuisine",
       text: "Authentic Tastes. Authentic Atmosphere.",
-      image: slide1,
+      image: "/assets/hero-bg-1.jpg",
     },
     {
       title: "We can't wait to serve you!",
