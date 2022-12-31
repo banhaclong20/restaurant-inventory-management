@@ -66,7 +66,7 @@ export default function Feature() {
           <Image
             rounded="md"
             alt="feature image"
-            src="https://oishiirestaurants.com/assets/img/gallery/gallery-3.jpg"
+            src="/assets/Chef_Thanh_Nguyen.jpg"
             objectFit="cover"
           />
         </Flex>
@@ -79,7 +79,7 @@ export default function Feature() {
           <Image
             rounded="md"
             alt="feature image"
-            src="https://themes-themegoods.b-cdn.net/grandrestaurantv6/demo8/wp-content/uploads/sites/8/2021/01/noun_wavy-lines_1781282.png"
+            src="/assets/wavy-lines.png"
             objectFit="cover"
           />
         </Flex>
@@ -100,7 +100,7 @@ export default function Feature() {
             <Image
               rounded="md"
               alt="feature image"
-              src="https://images.unsplash.com/photo-1580821082847-c53037ecfe0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              src="/assets/feature-sushi.jpg"
               objectFit="cover"
             />
             <Box
@@ -120,7 +120,7 @@ export default function Feature() {
             <Image
               rounded="md"
               alt="feature image"
-              src="https://images.unsplash.com/photo-1562802378-063ec186a863?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              src="/assets/feature-sashimi.jpg"
               objectFit="cover"
             />
             <Box
@@ -140,7 +140,7 @@ export default function Feature() {
             <Image
               rounded="md"
               alt="feature image"
-              src="https://images.unsplash.com/photo-1582450871972-ab5ca641643d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              src="/assets/feature-specialty.jpg"
               objectFit="cover"
             />
             <Box
@@ -157,14 +157,6 @@ export default function Feature() {
             </Box>
           </Box>
         </SimpleGrid>
-        <Flex align="center" justify="center">
-          <Image
-            rounded="md"
-            alt="feature image"
-            src="https://themes-themegoods.b-cdn.net/grandrestaurantv6/demo8/wp-content/uploads/sites/8/2021/01/noun_wavy-lines_1781282.png"
-            objectFit="cover"
-          />
-        </Flex>
       </Box>
     </Container>
   );
