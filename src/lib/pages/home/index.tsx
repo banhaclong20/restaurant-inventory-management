@@ -19,27 +19,26 @@ const btns = [
   },
 ];
 
-const Home = () => {
-  return (
-    <Flex
-      direction="column"
-      alignItems="center"
-      justifyContent="center"
-      gap={4}
-      mb={8}
-      w="full"
-    >
-      <NextSeo title="Home" />
-      <Hero />
-      <Feature />
-      <CTABanner
-        bgImage="/assets/sushi-feature-bg.jpg"
-        headingText="Wide variety of sushi, sashimi and more. Best quality sushi at an efficient time"
-        buttons={btns}
-      />
-      <FindLocations />
-    </Flex>
-  );
-};
+const Home = () => (
+  <Flex
+    direction="column"
+    alignItems="center"
+    justifyContent="center"
+    gap={4}
+    mb={8}
+    w="full"
+  >
+    <NextSeo title="Home" />
+
+    <Hero />
+    <Feature />
+    <CTABanner
+      bgImage="/assets/sushi-feature-bg.jpg"
+      headingText="Wide variety of sushi, sashimi and more. Best quality sushi at an efficient time"
+      buttons={btns}
+    />
+    <FindLocations />
+  </Flex>
+);
 
 export default Home;

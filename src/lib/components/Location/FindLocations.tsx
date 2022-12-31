@@ -1,4 +1,4 @@
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { ArrowForwardIcon, AddIcon, CheckIcon } from "@chakra-ui/icons";
 import {
   Box,
   VStack,
@@ -12,30 +12,35 @@ import {
   StatLabel,
   StatNumber,
   SimpleGrid,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import type { ReactNode } from "react";
 import { GoLocation } from "react-icons/go";
+import { useDispatch, useSelector } from "react-redux";
 
 import { LOCATIONS } from "../../constant";
+import { setLocationName, selectLocationName } from "store/locationSlice";
 
 interface LocationProps {
   locationName: string;
   address: string;
   icon: ReactNode;
   locationLink: string;
+  asPopup: boolean;
 }
 
 function LocationItem(props: LocationProps) {
   const router = useRouter();
-  const { locationName, address, locationLink, icon } = props;
+  const { locationName, address, locationLink, icon, asPopup } = props;
+  const selectedLocation = useSelector(selectLocationName);
+  const dispatch = useDispatch();
+  const selectedItem = selectedLocation === locationName;
   return (
     <Stat
       px={{ base: 2, md: 4 }}
       py="5"
       shadow="sm"
-      border="1px solid #DDD"
+      border={selectedItem ? "2px solid #dd6b20" : "1px solid #DDD"}
       rounded="lg"
       _hover={{ background: "#f6faff" }}
       className="stats"
@@ -52,69 +57,93 @@ function LocationItem(props: LocationProps) {
           >
             {address}
           </StatLabel>
-          <Button
-            colorScheme="orange"
-            variant="outline"
-            size="sm"
-            mt="5"
-            rightIcon={<ArrowForwardIcon />}
-            onClick={() => router.push(locationLink)}
-          >
-            Location Detail
-          </Button>
+          {(asPopup || (!asPopup && selectedItem)) && (
+            <Button
+              colorScheme="orange"
+              variant={selectedItem ? "solid" : "outline"}
+              size="sm"
+              mt="5"
+              leftIcon={selectedItem ? <CheckIcon /> : <AddIcon />}
+              onClick={() => dispatch(setLocationName(locationName))}
+              mr="2"
+            >
+              {selectedItem ? "Selected Location" : "Select this location"}
+            </Button>
+          )}
+
+          {!asPopup && (
+            <Button
+              colorScheme="orange"
+              variant="outline"
+              size="sm"
+              mt="5"
+              rightIcon={<ArrowForwardIcon />}
+              onClick={() => router.push(locationLink)}
+            >
+              Location Detail
+            </Button>
+          )}
         </Box>
-        <Box
-          my="auto"
-          color={useColorModeValue("gray.800", "gray.200")}
-          alignContent="center"
-        >
-          {icon}
-        </Box>
+        {!asPopup && (
+          <Box my="auto" color="gray.600" alignContent="center">
+            {icon}
+          </Box>
+        )}
       </Flex>
     </Stat>
   );
 }
 
-export default function FindLocations() {
+interface FindLocationsProps {
+  asPopup?: boolean;
+}
+
+export default function FindLocations({ asPopup = false }: FindLocationsProps) {
   const router = useRouter();
   return (
-    <Box as={Container} maxW="5xl" my={5} p={4}>
-      <Grid
-        templateColumns={{
-          base: "repeat(1, 1fr)",
-          sm: "repeat(2, 1fr)",
-          md: "repeat(2, 1fr)",
-        }}
-        gap={4}
-        mb="10"
-      >
-        <GridItem colSpan={12}>
-          <VStack alignItems="center" spacing="10px">
-            <chakra.h2
-              fontSize="3xl"
-              fontWeight="700"
-              textTransform="uppercase"
-            >
-              Find Locations
-            </chakra.h2>
-            <Button
-              colorScheme="gray"
-              size="md"
-              variant="outline"
-              onClick={() => router.push("/locations")}
-            >
-              Explore your favorite Oishii location
-            </Button>
-          </VStack>
-        </GridItem>
-      </Grid>
+    <Box as={Container} maxW="5xl" my={asPopup ? 0 : 5} p={asPopup ? 2 : 4}>
+      {!asPopup && (
+        <Grid
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(2, 1fr)",
+          }}
+          gap={4}
+          mb="10"
+        >
+          <GridItem colSpan={12}>
+            <VStack alignItems="center" spacing="10px">
+              <chakra.h2
+                fontSize="3xl"
+                fontWeight="700"
+                textTransform="uppercase"
+              >
+                Find Locations
+              </chakra.h2>
+              <Button
+                colorScheme="gray"
+                size="md"
+                variant="outline"
+                onClick={() => router.push("/locations")}
+              >
+                Explore your favorite Oishii location
+              </Button>
+            </VStack>
+          </GridItem>
+        </Grid>
+      )}
 
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: "4", md: "6" }}>
+      <SimpleGrid
+        columns={{ base: 1, md: asPopup ? 1 : 2 }}
+        spacing={{ base: "4", md: asPopup ? 2 : 6 }}
+      >
         {LOCATIONS.map(({ locationName, address, locationLink }) => (
           <LocationItem
             key={locationName}
             locationName={locationName}
             address={address}
+            asPopup={asPopup}
             locationLink={`/locations/${locationLink}`}
             icon={<GoLocation size="2em" />}
           />

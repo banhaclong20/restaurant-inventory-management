@@ -1,5 +1,7 @@
-import { Box, Alert } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import type { ReactNode } from "react";
+
+import TopHeader from "lib/components/TopHeader";
 
 import Footer from "./Footer";
 import Header from "./Header";
@@ -12,10 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <Box margin="0 auto" transition="0.5s ease-out">
       <Box>
-        <Alert status="info" variant="solid" className="banner-top">
-          Reservations - We recommend making a reservation ahead of time. Book
-          your table today!
-        </Alert>
+        <TopHeader />
         <Header />
         <Box as="main">{children}</Box>
         <Footer />

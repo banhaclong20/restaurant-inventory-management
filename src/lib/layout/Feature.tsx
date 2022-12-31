@@ -93,7 +93,7 @@ export default function Feature() {
       </Box>
       <Box p={4}>
         <SimpleGrid
-          columns={{ base: 3, md: 3 }}
+          columns={{ base: 1, md: 3 }}
           spacing={{ base: "2", md: "10" }}
         >
           <Box>
