@@ -43,7 +43,7 @@ export default function Feature() {
             Our Story
           </Text>
           <Heading>Welcome to Oishii Restaurants</Heading>
-          <Text color="gray.500" fontSize="lg">
+          <Text color="gray.500" fontSize={{ base: "sm", md: "md" }}>
             Chef Thanh Nguyen of Oishii is a man of few words. Or so it seems
             from the other side of the sushi bar as I watch him swiftly yet
             meticulously craft, roll, torch, slice, shred and garnish raw fish

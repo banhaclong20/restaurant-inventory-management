@@ -1,5 +1,19 @@
-import { Flex, Text, Container, SimpleGrid } from "@chakra-ui/react";
+import { HamburgerIcon, TriangleUpIcon, SmallAddIcon } from "@chakra-ui/icons";
+import {
+  Flex,
+  Text,
+  Container,
+  SimpleGrid,
+  Menu as MenuComp,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  IconButton,
+  MenuGroup,
+  MenuDivider,
+} from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
+import Link from "next/link";
 
 import CTABanner from "../../lib/components/CTABanner";
 import {
@@ -14,6 +28,44 @@ import {
 import MenuSection from "./MenuSection";
 import WineList from "./WineList";
 
+const MeneIcon = () => (
+  <MenuComp>
+    <MenuButton
+      as={IconButton}
+      aria-label="Options"
+      icon={<HamburgerIcon />}
+      variant="solid"
+      colorScheme="orange"
+    />
+    <MenuList>
+      <MenuGroup title="MENU">
+        <Link href="/menu#Sushi">
+          <MenuItem icon={<SmallAddIcon />}>Sushi</MenuItem>
+        </Link>
+        <Link href="/menu#Sashimi">
+          <MenuItem icon={<SmallAddIcon />}>Sashimi</MenuItem>
+        </Link>
+        <Link href="/menu#Maki Roll">
+          <MenuItem icon={<SmallAddIcon />}>Maki Roll</MenuItem>
+        </Link>
+        <Link href="/menu#Oishii Specialty">
+          <MenuItem icon={<SmallAddIcon />}>Oishii Specialty</MenuItem>
+        </Link>
+        <Link href="/menu#dinner-menu">
+          <MenuItem icon={<SmallAddIcon />}>Dinner Menu</MenuItem>
+        </Link>
+        <Link href="/menu#wines-sake-menu">
+          <MenuItem icon={<SmallAddIcon />}>Wine | Sake Menu</MenuItem>
+        </Link>
+      </MenuGroup>
+      <MenuDivider />
+      <Link href="/menu#">
+        <MenuItem icon={<TriangleUpIcon />}>Go to Top</MenuItem>
+      </Link>
+    </MenuList>
+  </MenuComp>
+);
+
 const Menu = () => {
   return (
     <Flex
@@ -23,6 +75,7 @@ const Menu = () => {
       gap={4}
       mb={8}
       w="full"
+      className="menu-page"
     >
       <NextSeo title="Menu" />
       <CTABanner
@@ -144,6 +197,7 @@ const Menu = () => {
         data={WINES.RED_WINES_FULL_BODY}
       />
       <WineList category="NIHONSHU – SAKE" data={WINES.NIHONSHU_SAKE} />
+      <MeneIcon />
     </Flex>
   );
 };

@@ -85,7 +85,7 @@ const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
 
 const MenuSection = ({
   category,
-  data,
+  data = [],
   isSubMenu = false,
 }: MenuSectionProps) => {
   return (
@@ -96,6 +96,7 @@ const MenuSection = ({
       gap={4}
       mb={8}
       w="full"
+      id={category}
     >
       <Container maxW="6xl">
         <SimpleGrid columns={{ base: 1 }}>

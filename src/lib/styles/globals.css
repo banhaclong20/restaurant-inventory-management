@@ -25,6 +25,14 @@
   color: #FFF;
 }
 
+/* Page */
+
+.menu-page .chakra-menu__menu-button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
 /* Footer */
 .footer {
   background-color: #121825;
