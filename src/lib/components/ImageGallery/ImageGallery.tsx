@@ -21,115 +21,32 @@ export default function ImageGallery() {
   return (
     <div>
       <SimpleGrid
-        columns={{ base: 1, md: 3 }}
+        columns={{ base: 2, md: 4 }}
         spacing={2}
         mb={{ base: "1", md: "2" }}
       >
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/SushiSME.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(0)}
-          />
-        </Flex>
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/oishiismu.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(1)}
-          />
-        </Flex>
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/tunatower.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(2)}
-          />
-        </Flex>
-      </SimpleGrid>
-
-      <SimpleGrid
-        columns={{ base: 1, md: 2 }}
-        spacing={2}
-        mb={{ base: "1", md: "2" }}
-      >
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/Roll3.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(3)}
-          />
-        </Flex>
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/RomanRoll.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(4)}
-          />
-        </Flex>
-      </SimpleGrid>
-
-      <SimpleGrid
-        columns={{ base: 1, md: 4 }}
-        spacing={2}
-        mb={{ base: "1", md: "10" }}
-      >
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/FlowerRoll.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(5)}
-          />
-        </Flex>
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/CaterpillarRoll.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(6)}
-          />
-        </Flex>
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/ChefSpecialties.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(7)}
-          />
-        </Flex>
-        <Flex>
-          <Image
-            alt="feature image"
-            src="/assets/menu/FreshCocktails.jpg"
-            objectFit="cover"
-            _hover={{ cursor: "pointer" }}
-            onClick={() => setIndex(8)}
-          />
-        </Flex>
+        {images.map((image, idx) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <Flex key={`${image.caption}_${idx}`}>
+            <Image
+              alt={image.caption}
+              src={image.src}
+              objectFit="cover"
+              _hover={{ cursor: "pointer" }}
+              onClick={() => setIndex(idx)}
+            />
+          </Flex>
+        ))}
       </SimpleGrid>
 
       {!!currentImage && (
         <Lightbox
-          mainSrc={currentImage.original}
+          mainSrc={currentImage.src}
           imageTitle={currentImage.caption}
           mainSrcThumbnail={currentImage.src}
-          nextSrc={nextImage.original}
+          nextSrc={nextImage.src}
           nextSrcThumbnail={nextImage.src}
-          prevSrc={prevImage.original}
+          prevSrc={prevImage.src}
           prevSrcThumbnail={prevImage.src}
           onCloseRequest={handleClose}
           onMovePrevRequest={handleMovePrev}

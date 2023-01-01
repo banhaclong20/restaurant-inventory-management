@@ -115,6 +115,7 @@ const TopHeader = () => {
             alignItems="center"
             display="flex"
             fontSize={{ base: "xs", md: "md" }}
+            isTruncated
           >
             {location ? (
               <>
@@ -125,7 +126,7 @@ const TopHeader = () => {
                 </Box>
               </>
             ) : (
-              <Link href="/locations">View our Promotions</Link>
+              <Link href="/locations?from=promotion">View our Promotions</Link>
             )}
           </Box>
         </SimpleGrid>

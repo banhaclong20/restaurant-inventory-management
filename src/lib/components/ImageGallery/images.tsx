@@ -1,56 +1,115 @@
 export const images = [
   {
-    id: 1,
     src: "/assets/menu/SushiSME.jpg",
-    original: "/assets/menu/SushiSME.jpg",
     caption: "Sushi Boat",
   },
   {
-    id: 2,
     src: "/assets/menu/oishiismu.jpg",
-    original: "/assets/menu/oishiismu.jpg",
     caption: "Special Oishii Chef",
   },
   {
-    id: 3,
     src: "/assets/menu/tunatower.jpg",
-    original: "/assets/menu/tunatower.jpg",
     caption: "Tuna Tower",
   },
   {
-    id: 4,
     src: "/assets/menu/Roll3.jpg",
-    original: "/assets/menu/Roll3.jpg",
     caption: "Special Salmon Roll",
   },
   {
-    id: 5,
     src: "/assets/menu/RomanRoll.jpg",
-    original: "/assets/menu/RomanRoll.jpg",
     caption: "Roman Roll",
   },
   {
-    id: 6,
     src: "/assets/menu/FlowerRoll.jpg",
-    original: "/assets/menu/FlowerRoll.jpg",
     caption: "Flower Roll",
   },
   {
-    id: 7,
     src: "/assets/menu/CaterpillarRoll.jpg",
-    original: "/assets/menu/CaterpillarRoll.jpg",
     caption: "Caterpillar Roll",
   },
   {
-    id: 8,
     src: "/assets/menu/ChefSpecialties.jpg",
-    original: "/assets/menu/ChefSpecialties.jpg",
     caption: "Chef Specialties",
   },
   {
-    id: 10,
     src: "/assets/menu/FreshCocktails.jpg",
-    original: "/assets/menu/FreshCocktails.jpg",
     caption: "Fresh Cocktails",
+  },
+  {
+    src: "/assets/menu/BunDauHuChien.jpg",
+    caption: "Bun Dau Hu Chien",
+  },
+  {
+    src: "/assets/menu/CevicheMiniTostadas.jpg",
+    caption: "Ceviche Mini Tostadas",
+  },
+  {
+    src: "/assets/menu/ChefCreation.jpeg",
+    caption: "Chef Creation",
+  },
+  {
+    src: "/assets/menu/ChristmasRoll.jpg",
+    caption: "Christmas Roll",
+  },
+  {
+    src: "/assets/menu/CowboyRoll.jpg",
+    caption: "Cowboy Roll",
+  },
+  {
+    src: "/assets/menu/fattyTunalSushi.jpg",
+    caption: "Fatty Tunal Sushi",
+  },
+  {
+    src: "/assets/menu/HimalayanRoll.jpg",
+    caption: "Himalayan Roll",
+  },
+  {
+    src: "/assets/menu/NoNameRoll.jpg",
+    caption: "No Name Roll",
+  },
+  {
+    src: "/assets/menu/RitaCoktail.jpg",
+    caption: "Rita Cocktail",
+  },
+  {
+    src: "/assets/menu/Roll.jpg",
+    caption: "Maki Roll",
+  },
+  {
+    src: "/assets/menu/SalmonTacos.jpg",
+    caption: "Salmon Tacos",
+  },
+  {
+    src: "/assets/menu/scallop.jpg",
+    caption: "Fresh Scallop",
+  },
+
+  {
+    src: "/assets/menu/SushiBoat.jpeg",
+    caption: "Sushi Boat",
+  },
+  {
+    src: "/assets/menu/TheRoyceRoll.jpg",
+    caption: "The Royce Roll",
+  },
+  {
+    src: "/assets/menu/toroSushi.jpeg",
+    caption: "Toro Sushi",
+  },
+  {
+    src: "/assets/menu/UniRoll.jpg",
+    caption: "Uni Roll",
+  },
+  {
+    src: "/assets/menu/UniSeaUrchin.jpg",
+    caption: "Uni Sea Urchin",
+  },
+  {
+    src: "/assets/menu/PokeRoll.jpg",
+    caption: "Poke Roll",
+  },
+  {
+    src: "/assets/menu/GRoll.jpg",
+    caption: "G Roll",
   },
 ];
