@@ -24,6 +24,8 @@ interface MenuSectionProps {
   category: string;
   data: Array<ItemProps>;
   isSubMenu: boolean;
+  additionalInfo?: string;
+  isLavui: boolean;
 }
 
 const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
@@ -87,7 +89,10 @@ const MenuSection = ({
   category,
   data = [],
   isSubMenu = false,
+  additionalInfo = "",
+  isLavui = false,
 }: MenuSectionProps) => {
+  const mt = isLavui ? "2" : "-6";
   return (
     <Flex
       direction="column"
@@ -105,7 +110,7 @@ const MenuSection = ({
             align="center"
             fontSize={{ base: "xl", md: isSubMenu ? "xl" : "3xl" }}
             textTransform="uppercase"
-            my={isSubMenu ? "-6" : "0.5"}
+            my={isSubMenu ? mt : "0.5"}
           >
             {category}
           </Text>
@@ -117,6 +122,12 @@ const MenuSection = ({
             {(!isSubMenu || category === "Appetizers") &&
               "*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness."}
           </Text>
+
+          {!!additionalInfo && (
+            <Text align="center" fontSize={{ base: "sm", md: "md" }} mt="-2">
+              {additionalInfo}
+            </Text>
+          )}
         </SimpleGrid>
 
         <SimpleGrid

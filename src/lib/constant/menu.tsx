@@ -1191,4 +1191,231 @@ const WINES = {
   ],
 };
 
-export { SUSHI, SASHIMI, MAKI_ROLL, OISHII_SPECIALTY, DINNER_MENU, WINES };
+const LAVUI_MENU = {
+  APPETIZERS: [
+    {
+      name: "Shrimp & Pork Dumplings (6)",
+      desc: "shrimp, pork, daikon, onions, dumpling sauce",
+    },
+    {
+      name: "LaVui Shrimp Dumplings (5)",
+      desc: "shrimp, daikon, onions, dumpling sauce",
+    },
+    {
+      name: "Shrimp Spring Rolls (2)",
+      desc: "shrimp, lettuce, vermicelli, cilantro, peanut sauce",
+    },
+    {
+      name: "Shrimp & Pork Egg Rolls (2)",
+      desc: "shrimp, pork, carrots, noodles, onions, taro, fish sauce",
+    },
+    {
+      name: "Crispy Rocky Shrimp",
+      desc: "shrimp, spicy mayo, lemon, shredded lettuce",
+    },
+    {
+      name: "Tuna Lavui",
+      desc: "tuna, shallots, garlic, truffle oil, Jalapeño, soy sauce",
+      isRaw: true,
+    },
+    {
+      name: "Seared Salmon Lavui",
+      desc: "salmon, avocado, lemon, green sauce - jalapeño, cilantro, oil",
+      isRaw: true,
+    },
+    {
+      name: "Yellowtail Lavui",
+      desc: "yellowtail, parsley sauce - parmesan cheese, cilantro, parsley, oil",
+      isRaw: true,
+    },
+    {
+      name: "Edamame | Spicy Edamame",
+      desc: "steamed soybeans, kosher salt (plain or spicy)",
+    },
+  ],
+  ENTREES: [
+    {
+      name: "Shaken Beef",
+      desc: "beef tenderloin, onions, tomatoes, lettuce, peppers",
+    },
+    {
+      name: "Crispy Shrimp in Sea Salt",
+      desc: "shrimp, jalapeño, garlic, onions, tomatoes, lettuce, parmesan cheese",
+    },
+    {
+      name: "Chicken Fried Rice",
+      desc: "chicken, egg, ginger, carrots, peas, scallions",
+    },
+    {
+      name: "Clay Pot Chicken",
+      desc: "chicken, quail egg, ginger, lemongrass, onions, jalapeño, fish sauce",
+    },
+    {
+      name: "Clay Pot Black Cod",
+      desc: "black cod, pork belly, garlic, lemongrass, onions, fish sauce",
+    },
+    {
+      name: "Curry Chicken with Baguette",
+      desc: "chicken, pototoes, onions, carrots, yellow curry, coconut milk, bay leaf",
+    },
+    {
+      name: "Beef Stew with Baguette or Noddles",
+      desc: "beef, carrot, lemongrass, star anise, ginger, garlic",
+    },
+    {
+      name: "Black Cod Sweet & Sour Soup (Canh Chua)",
+      desc: "black cod, garlic, tamarind, pineapple, taro stems, okra, fish sauce",
+    },
+    {
+      name: "Buddhist Delight & Crispy Tofu",
+      desc: "tofu, carrots, onions, mushrooms, snow peas, clear noodles",
+    },
+  ],
+  BANHMI: [
+    {
+      name: "Pork Banh Mi",
+      desc: "grilled pork",
+    },
+    {
+      name: "Chicken Banh Mi",
+      desc: "grilled chicken",
+    },
+    {
+      name: "Beef Banh Mi",
+      desc: "brisket, brown sauce",
+    },
+    {
+      name: "Roasted Duck Banh Mi",
+      desc: "roasted duck, truffle oil",
+    },
+    {
+      name: "LaVui Special Banh Mi",
+      desc: "brisket, pork belly, egg",
+    },
+  ],
+  NOODLE_DISHED: [
+    {
+      name: "Beef Flat Noodles",
+      desc: "beef tenderloin, rice noodles, brown sauce",
+    },
+    {
+      name: "Shrimp Garlic Noodles",
+      desc: "shrimp, egg noodles, bok choy, shitake mushrooms, parmesan cheese",
+    },
+    {
+      name: "Chicken Spicy Noodles",
+      desc: "chicken, rice noodles, spicy fish sauce",
+    },
+    {
+      name: "Chicken Curry Noodles",
+      desc: "chicken, rice noodles, yellow curry sauce",
+    },
+  ],
+  SALADS: [
+    {
+      name: "Shrimp with Lotus Stems",
+      desc: "shrimp, lotus stems, citrus dressing",
+    },
+    {
+      name: "Salmon Carpaccio Salad*",
+      desc: "salmon, lemon, citrus dressing",
+      isRaw: true,
+    },
+    {
+      name: "Chicken Cabbage Salad",
+      desc: "chicken breast, shredded cabbage, fish sauce dressing",
+    },
+  ],
+  PHO: [
+    {
+      name: "Pho Ga",
+      desc: "chicken breast",
+    },
+    {
+      name: "Pho Tai Bo Vien",
+      desc: "rare beef, meatballs",
+    },
+    {
+      name: "Pho Dac Biet",
+      desc: "rare beef, beef brisket, meatballs",
+    },
+  ],
+  BUN: [
+    {
+      name: "Beef Vermicelli (Bun Bo Xao)",
+      desc: "sauteed beef tenderloin, garlic, onions, scallions",
+    },
+    {
+      name: "Chicken Vermicelli (Bun Ga Nuong)",
+      desc: "grilled chicken, scallion oil",
+    },
+    {
+      name: "Pork Vermicelli (Bun Thit Nuong)",
+      desc: "grilled pork, scallion oil",
+    },
+    {
+      name: "Tofu Vermicelli (Bun Dau Hu Chien)",
+      desc: "fried tofu, garlic, onions, scallions",
+    },
+  ],
+  ADDITIONS: [
+    {
+      name: "Chicken",
+    },
+    {
+      name: "Pork",
+    },
+    {
+      name: "Beef",
+    },
+    {
+      name: "Shrimp",
+    },
+    {
+      name: "Tofu",
+    },
+    {
+      name: "Fried Egg",
+    },
+  ],
+  BEVERAGES: [
+    {
+      name: "Vietnamese Iced Coffee",
+    },
+    {
+      name: "Boba Tea - Passionfruit Green Tea",
+      desc: "Add Topping: Tapioca Boba",
+    },
+    {
+      name: "Boba Tea - Strawberry Green Tea",
+      desc: "Add Topping: Tapioca Boba",
+    },
+    {
+      name: "Boba Tea - Taro Milk Tea",
+      desc: "Add Topping: Tapioca Boba",
+    },
+    {
+      name: "Boba Tea - Thai Tea",
+      desc: "Add Topping: Tapioca Boba",
+    },
+    {
+      name: "Soft Drinks",
+    },
+    {
+      name: "Bottled Water",
+    },
+    {
+      name: "Iced Tea or Hot Tea",
+    },
+  ],
+};
+
+export {
+  SUSHI,
+  SASHIMI,
+  MAKI_ROLL,
+  OISHII_SPECIALTY,
+  DINNER_MENU,
+  WINES,
+  LAVUI_MENU,
+};

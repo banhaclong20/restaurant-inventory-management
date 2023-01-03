@@ -155,7 +155,7 @@ export default () => {
 
       <Box p={4} maxW="6xl">
         <SimpleGrid columns={{ base: 1, md: 1 }} spacing={10}>
-          <Link href="/menu">
+          <Link href={location === "lavui" ? "/menu/lavui" : "/menu"}>
             <Center
               bg="#272c34"
               h="100px"

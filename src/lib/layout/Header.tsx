@@ -66,6 +66,11 @@ const NAV_ITEMS = [
         subLabel: "Latest list for Wines and Sake",
         href: "/menu#wines-sake-menu",
       },
+      {
+        label: "Lavui Menu",
+        subLabel: "Vietnamese Restaurant",
+        href: "/menu/lavui",
+      },
     ],
   },
   {
