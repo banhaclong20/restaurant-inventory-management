@@ -55,7 +55,7 @@ const MenuIcon = ({ locationLink, onlineLinks }: MenuIconProps) => (
         <MenuItem icon={<ExternalLinkIcon />}>Location Detail</MenuItem>
       </Link>
       <MenuDivider />
-      <Link href="/menu">
+      <Link href={locationLink === "lavui" ? "/menu/lavui" : "/menu"}>
         <MenuItem icon={<HamburgerIcon />}>Full Menu Items</MenuItem>
       </Link>
     </MenuList>
