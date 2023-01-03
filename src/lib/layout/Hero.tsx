@@ -40,6 +40,11 @@ export default function CaptionCarousel() {
 
   const cards = [
     {
+      title: "Our promotion",
+      text: "All day Wednesday - 50% off bottles of wines, cold sake and carafes of hot sake",
+      image: "/assets/promotion-slide-bg.jpg",
+    },
+    {
       title: "Sushi & Pan-Asian Cuisine",
       text: "Authentic Tastes. Authentic Atmosphere.",
       image: "/assets/hero-bg-1.jpg",

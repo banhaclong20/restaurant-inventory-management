@@ -1,4 +1,4 @@
-import { CheckIcon, Icon } from "@chakra-ui/icons";
+import { CheckIcon, Icon, StarIcon } from "@chakra-ui/icons";
 import {
   Flex,
   Box,
@@ -11,14 +11,17 @@ import {
   ListIcon,
   Center,
   Image,
+  Tooltip,
 } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { BsFillTelephoneFill, BsDisplay } from "react-icons/bs";
 import { HiLocationMarker, HiClipboardList } from "react-icons/hi";
+import { useSelector } from "react-redux";
 
 import { LOCATIONS } from "../../lib/constant";
+import { selectLocationName } from "store/locationSlice";
 
 type OnlineLinksProps = {
   googleMap: string;
@@ -57,8 +60,11 @@ export default () => {
     services,
     website,
     promotions,
+    locationName,
   }: LocationProps =
     LOCATIONS.find((item) => item.locationLink === location) || [];
+
+  const selectedLocation = useSelector(selectLocationName);
 
   return (
     <Flex
@@ -84,7 +90,14 @@ export default () => {
 
       <Box py={5} px={6} maxW="6xl">
         <Heading as="h4" size="lg" mt={6} mb={2}>
-          {name}
+          <>
+            {name}{" "}
+            {selectedLocation === locationName && (
+              <Tooltip label="This is your selected location" fontSize="md">
+                <StarIcon color="green.500" boxSize={6} />
+              </Tooltip>
+            )}
+          </>
         </Heading>
 
         <List>
