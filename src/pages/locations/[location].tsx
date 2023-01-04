@@ -50,7 +50,7 @@ interface LocationProps {
 
 export default () => {
   const router = useRouter();
-  const { location } = router.query;
+  const { location } = router.query || {};
   const {
     address,
     businessHours,
