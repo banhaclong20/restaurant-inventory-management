@@ -64,7 +64,7 @@ export default () => {
   }: LocationProps =
     LOCATIONS.find((item) => item.locationLink === location) || [];
 
-  const selectedLocation = useSelector(selectLocationName);
+  const selectedLocation = useSelector(selectLocationName) || "";
 
   return (
     <Flex

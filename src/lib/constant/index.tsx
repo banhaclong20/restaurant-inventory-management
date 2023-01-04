@@ -92,7 +92,7 @@ const LOCATIONS = [
     onlineLinks: {
       googleMap:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.0304905244434!2d-96.83499858481693!3d32.817957080959715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9fdf68d7553b%3A0x580331f1f08fec02!2sLaVui%20Restaurant!5e0!3m2!1sen!2sus!4v1672172666435!5m2!1sen!2sus",
-      opentable: "/#",
+      opentable: "",
       doordash:
         "https://order.online/store/lavui-vietnamese-restaurant-dallas-1442869/?hideModal=true&pickup=true",
       facebook: "https://www.facebook.com/LaVuiDallas",

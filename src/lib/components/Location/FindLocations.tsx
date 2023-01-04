@@ -35,6 +35,12 @@ function LocationItem(props: LocationProps) {
   const selectedLocation = useSelector(selectLocationName);
   const dispatch = useDispatch();
   const selectedItem = selectedLocation === locationName;
+
+  const handleRoute = () => {
+    const { pathname } = router;
+    if (pathname === "/locations/[location]") router.push(locationLink);
+  };
+
   return (
     <Stat
       px={{ base: 2, md: 4 }}
@@ -64,7 +70,10 @@ function LocationItem(props: LocationProps) {
               size="sm"
               mt="5"
               leftIcon={selectedItem ? <CheckIcon /> : <AddIcon />}
-              onClick={() => dispatch(setLocationName(locationName))}
+              onClick={() => {
+                dispatch(setLocationName(locationName));
+                handleRoute();
+              }}
               mr="2"
             >
               {selectedItem ? "Selected Location" : "Select this location"}
