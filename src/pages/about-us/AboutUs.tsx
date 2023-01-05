@@ -54,7 +54,7 @@ const AboutUs = () => {
             >
               Our Story
             </Text>
-            <Heading>Welcome to Oishii Restaurants</Heading>
+            <Heading color="gray.800">Welcome to Oishii Restaurants</Heading>
             <Text color="gray.500" fontSize={{ base: "md", md: "lg" }}>
               Chef Thanh Nguyen of Oishii is a man of few words. Or so it seems
               from the other side of the sushi bar as I watch him swiftly yet
@@ -98,7 +98,7 @@ const AboutUs = () => {
           pb={{ base: "4", md: "8" }}
         >
           <Stack spacing={4}>
-            <Heading>His Story</Heading>
+            <Heading color="gray.800">His Story</Heading>
             <Text color="gray.500" fontSize={{ base: "md", md: "lg" }}>
               It’s one you might find on Lifetime or among the other
               motivational blockbusters out there. It all starts in a village
