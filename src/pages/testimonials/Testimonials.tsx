@@ -105,7 +105,7 @@ export default function Testimonials() {
           ))}
         </SimpleGrid>
 
-        <Text fontSize="2xl" mt="10" color="gray.700">
+        {/* <Text fontSize="2xl" mt="10" color="gray.700">
           View more reviews from:
         </Text>
         <SimpleGrid
@@ -142,7 +142,7 @@ export default function Testimonials() {
               <Text>Yelp</Text>
             </Center>
           </Button>
-        </SimpleGrid>
+        </SimpleGrid> */}
       </Flex>
     </>
   );

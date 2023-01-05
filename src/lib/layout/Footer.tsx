@@ -68,14 +68,6 @@ export default function LargeWithNewsletter() {
             <Text fontSize="sm" mb="2">
               © {year} Oishii Restaurant. All rights reserved
             </Text>
-            <Stack direction="row" spacing={6}>
-              <SocialButton label="Twitter" href="#">
-                <FaTwitter />
-              </SocialButton>
-              <SocialButton label="Instagram" href="#">
-                <FaInstagram />
-              </SocialButton>
-            </Stack>
           </Flex>
 
           <Stack align="center">

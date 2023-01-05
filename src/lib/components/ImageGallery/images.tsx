@@ -13,7 +13,7 @@ export const images = [
   },
   {
     src: "/assets/menu/Roll3.jpg",
-    caption: "Special Salmon Roll",
+    caption: "Salmon Sushi",
   },
   {
     src: "/assets/menu/RomanRoll.jpg",
@@ -26,10 +26,6 @@ export const images = [
   {
     src: "/assets/menu/CaterpillarRoll.jpg",
     caption: "Caterpillar Roll",
-  },
-  {
-    src: "/assets/menu/ChefSpecialties.jpg",
-    caption: "Chef Specialties",
   },
   {
     src: "/assets/menu/FreshCocktails.jpg",
@@ -56,16 +52,8 @@ export const images = [
     caption: "Cowboy Roll",
   },
   {
-    src: "/assets/menu/fattyTunalSushi.jpg",
-    caption: "Fatty Tunal Sushi",
-  },
-  {
     src: "/assets/menu/HimalayanRoll.jpg",
     caption: "Himalayan Roll",
-  },
-  {
-    src: "/assets/menu/NoNameRoll.jpg",
-    caption: "No Name Roll",
   },
   {
     src: "/assets/menu/RitaCoktail.jpg",
