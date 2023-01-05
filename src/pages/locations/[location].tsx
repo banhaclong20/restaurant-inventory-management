@@ -88,7 +88,7 @@ export default () => {
         />
       )}
 
-      <Box py={5} px={6} maxW="6xl">
+      <Box py={5} px={6} maxW="6xl" color="gray.700">
         <Heading as="h4" size="lg" mt={6} mb={2}>
           <>
             {name}{" "}

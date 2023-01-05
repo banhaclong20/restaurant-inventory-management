@@ -101,7 +101,11 @@ const TopHeader = () => {
                     Locations
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent w="fit-content" _focus={{ boxShadow: "none" }}>
+                <PopoverContent
+                  w="fit-content"
+                  _focus={{ boxShadow: "none" }}
+                  backgroundColor="white"
+                >
                   <PopoverArrow />
                   <PopoverBody>
                     <FindLocations asPopup />
