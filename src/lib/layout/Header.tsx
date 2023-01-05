@@ -19,7 +19,6 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -102,7 +101,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display="block"
       p={2}
       rounded="md"
-      _hover={{ bg: useColorModeValue("orange.50", "gray.900") }}
+      _hover={{ bg: "orange.50" }}
     >
       <Stack direction="row" align="center">
         <Box>
@@ -132,9 +131,9 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 };
 
 const DesktopNav = ({ menus }) => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
-  const popoverContentBgColor = useColorModeValue("white", "gray.800");
+  const linkColor = "gray.600";
+  const linkHoverColor = "gray.800";
+  const popoverContentBgColor = "white";
 
   return (
     <Stack direction="row" spacing={4}>
@@ -202,10 +201,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           textDecoration: "none",
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
+        <Text fontWeight={600} color="gray.600">
           {label}
         </Text>
         {/* {children && (
@@ -230,7 +226,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           pl={4}
           borderLeft={1}
           borderStyle="solid"
-          borderColor={useColorModeValue("gray.200", "gray.700")}
+          borderColor="gray.200"
           align="start"
         >
           {children &&
@@ -247,11 +243,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
-      display={{ md: "none" }}
-    >
+    <Stack bg="white" p={4} display={{ md: "none" }}>
       {[...NAV_ITEMS, ...NAV_ITEMS_RIGHT].map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -266,14 +258,11 @@ export default function DesktopNavWithSubnavigation() {
     <Box>
       <Container as={Stack} maxW="6xl">
         <Flex
-          bg={useColorModeValue("white", "gray.800")}
-          color={useColorModeValue("gray.600", "white")}
+          bg="white"
+          color="gray.600"
           minH="60px"
           py={{ base: 4 }}
           px={{ base: 4 }}
-          borderBottom={1}
-          borderStyle="solid"
-          borderColor={useColorModeValue("gray.200", "gray.900")}
           align="center"
         >
           <Flex
