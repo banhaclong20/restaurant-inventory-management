@@ -41,7 +41,7 @@ export default function Feature() {
           >
             Our Story
           </Text>
-          <Heading>Welcome to Oishii Restaurants</Heading>
+          <Heading color="gray.800">Welcome to Oishii Restaurants</Heading>
           <Text color="gray.500" fontSize={{ base: "sm", md: "md" }}>
             Chef Thanh Nguyen of Oishii is a man of few words. Or so it seems
             from the other side of the sushi bar as I watch him swiftly yet
@@ -82,7 +82,7 @@ export default function Feature() {
             objectFit="cover"
           />
         </Flex>
-        <Heading as="h2" size="xl" mt={6} mb={2}>
+        <Heading as="h2" size="xl" mt={6} mb={2} color="gray.800">
           Sushi Delivery to the house from Oishii Restaurants
         </Heading>
         <Text color="gray.500">

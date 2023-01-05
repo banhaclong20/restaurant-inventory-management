@@ -53,12 +53,13 @@ function LocationItem(props: LocationProps) {
     >
       <Flex justifyContent="space-between">
         <Box pl={{ base: 2, md: 2 }}>
-          <StatNumber fontSize="xl" fontWeight="medium">
+          <StatNumber fontSize="xl" fontWeight="medium" color="gray.800">
             {locationName}
           </StatNumber>
           <StatLabel
             fontSize={{ base: "xs", md: "xs", lg: "sm" }}
             fontWeight="medium"
+            color="gray.800"
             isTruncated
           >
             {address}
@@ -127,6 +128,7 @@ export default function FindLocations({ asPopup = false }: FindLocationsProps) {
                 fontSize="3xl"
                 fontWeight="700"
                 textTransform="uppercase"
+                color="gray.800"
               >
                 Find Locations
               </chakra.h2>
@@ -135,6 +137,7 @@ export default function FindLocations({ asPopup = false }: FindLocationsProps) {
                 size="md"
                 variant="outline"
                 onClick={() => router.push("/locations")}
+                color="gray.800"
               >
                 Explore your favorite Oishii location
               </Button>

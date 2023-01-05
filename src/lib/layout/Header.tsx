@@ -281,6 +281,7 @@ export default function DesktopNavWithSubnavigation() {
               }
               variant="ghost"
               aria-label="Toggle Navigation"
+              color="gray.600"
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: "left", md: "center" }}>
