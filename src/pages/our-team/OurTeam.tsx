@@ -54,6 +54,7 @@ const TeamItem = ({ imageURL, name, position, shortIntro }: ItemProps) => (
             fontWeight="semibold"
             as="h4"
             lineHeight="tight"
+            color="gray.800"
             isTruncated
           >
             {name}
@@ -94,10 +95,15 @@ const OurTeam = () => {
       />
 
       <Container maxW="5xl" py={{ base: "8", lg: "12" }}>
-        <chakra.h1 textAlign="center" fontSize="4xl" fontWeight="bold">
+        <chakra.h1
+          textAlign="center"
+          fontSize="4xl"
+          fontWeight="bold"
+          color="gray.800"
+        >
           Meet Our Team
         </chakra.h1>
-        <Text textAlign="center" fontSize="md">
+        <Text textAlign="center" fontSize="md" color="gray.600">
           Proprietor Thanh Nguyen not only has a passion for creating beautiful
           and extremely fresh sushi rolls and other Asian fare, but he also has
           a friendly and hospitable demeanor which allows American diners to

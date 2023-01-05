@@ -26,7 +26,13 @@ const Gallery = () => {
         mt={{ base: "0", lg: "5" }}
       >
         <SimpleGrid columns={{ base: 1 }} spacing={10}>
-          <Text as="b" align="center" fontSize="3xl" textTransform="uppercase">
+          <Text
+            as="b"
+            align="center"
+            fontSize="3xl"
+            textTransform="uppercase"
+            color="gray.800"
+          >
             Our Delicious sushi and Sashimi
           </Text>
           <ImageGallery />

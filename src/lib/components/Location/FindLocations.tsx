@@ -84,6 +84,7 @@ function LocationItem(props: LocationProps) {
           {!asPopup && (
             <Button
               colorScheme="orange"
+              color="orange.600"
               variant="outline"
               size="sm"
               mt="5"

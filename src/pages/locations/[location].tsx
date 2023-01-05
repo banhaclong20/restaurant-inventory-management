@@ -114,6 +114,7 @@ export default () => {
             <Box
               maxW="sm"
               borderWidth="1px"
+              borderColor="gray.200"
               overflow="hidden"
               mt="6"
               key={desc}

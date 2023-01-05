@@ -43,12 +43,11 @@ function TestimonialCard(props: TestimonialCardProps) {
       }}
     >
       <Flex direction="column" textAlign="left" justifyContent="space-between">
-        <chakra.p fontSize="15px" pb={4}>
+        <chakra.p fontSize="15px" pb={4} color="gray.800">
           {content}
         </chakra.p>
-        <chakra.p fontSize={14}>
+        <chakra.p fontSize={14} color="gray.800">
           {name}
-          <chakra.span color="gray.500" />
         </chakra.p>
       </Flex>
     </Flex>
@@ -73,7 +72,12 @@ export default function Testimonials() {
         width="full"
       >
         <Box width={{ base: "full", sm: "lg", lg: "3xl" }} margin="auto">
-          <chakra.h3 fontWeight="bold" fontSize={20} textTransform="uppercase">
+          <chakra.h3
+            fontWeight="bold"
+            fontSize={20}
+            textTransform="uppercase"
+            color="gray.700"
+          >
             People love our food
           </chakra.h3>
           <chakra.h1
@@ -101,7 +105,7 @@ export default function Testimonials() {
           ))}
         </SimpleGrid>
 
-        <Text fontSize="2xl" mt="10">
+        <Text fontSize="2xl" mt="10" color="gray.700">
           View more reviews from:
         </Text>
         <SimpleGrid
@@ -117,7 +121,12 @@ export default function Testimonials() {
             </Center>
           </Button>
 
-          <Button w="full" variant="outline" leftIcon={<FcGoogle />}>
+          <Button
+            w="full"
+            variant="outline"
+            leftIcon={<FcGoogle />}
+            colorScheme="grey.200"
+          >
             <Center>
               <Text>Google Places</Text>
             </Center>
