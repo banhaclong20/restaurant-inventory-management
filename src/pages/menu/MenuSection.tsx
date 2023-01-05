@@ -34,6 +34,7 @@ const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
       <Stack
         borderWidth="1px"
         borderRadius="sm"
+        borderColor="gray.200"
         w={{ sm: "100%" }}
         h={{ base: "100%" }}
         direction={{ base: "row" }}
@@ -47,7 +48,11 @@ const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
           alignItems="left"
           p={4}
         >
-          <Heading fontSize={{ base: "sm", md: "md" }} fontFamily="body">
+          <Heading
+            fontSize={{ base: "sm", md: "md" }}
+            fontFamily="body"
+            color="gray.800"
+          >
             {name} {isRaw ? "* " : " "}
             <Badge
               variant="solid"
@@ -110,6 +115,7 @@ const MenuSection = ({
             fontSize={{ base: "xl", md: isSubMenu ? "xl" : "3xl" }}
             textTransform="uppercase"
             my={isSubMenu ? mt : "0.5"}
+            color="gray.800"
           >
             {category}
           </Text>
@@ -117,6 +123,7 @@ const MenuSection = ({
             align="center"
             fontSize={{ base: "sm", md: "md" }}
             mt={category === "Appetizers" && "3.5"}
+            color="gray.600"
           >
             {(!isSubMenu || category === "Appetizers") &&
               "*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness."}
