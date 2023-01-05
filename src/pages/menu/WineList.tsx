@@ -14,10 +14,12 @@ import {
 // eslint-disable-next-line react/prop-types
 const Item = ({ item: { name, desc, price } }) => (
   <Tr>
-    <Td>
+    <Td color="gray.800">
       <Text as="b">{name}</Text>, {desc}
     </Td>
-    <Td textAlign="right">{price}</Td>
+    <Td textAlign="right" color="gray.800">
+      {price}
+    </Td>
   </Tr>
 );
 

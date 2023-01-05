@@ -99,7 +99,7 @@ const Menu = () => {
 
       <Container maxW="6xl" mb="10">
         <SimpleGrid columns={{ base: 1 }} textAlign="center" spacing={2}>
-          <Text fontSize={{ base: "xs", md: "sm" }}>
+          <Text fontSize={{ base: "xs", md: "sm" }} color="gray.800">
             --- All rolls served with sesame seeds. Please inform your server of
             any food allergies. Substitutions subject to additional charge. ---
           </Text>
@@ -152,11 +152,11 @@ const Menu = () => {
 
       <Container maxW="6xl" mb="10">
         <SimpleGrid columns={{ base: 1 }} textAlign="center" spacing={2}>
-          <Text fontSize={{ base: "xs", md: "sm" }}>
+          <Text fontSize={{ base: "xs", md: "sm" }} color="gray.800">
             All menu items and prices are subject to change according to
             seasonality and availability.
           </Text>
-          <Text fontSize={{ base: "xs", md: "sm" }}>
+          <Text fontSize={{ base: "xs", md: "sm" }} color="gray.800">
             For all take-out orders, a 10% service charge will be applied.
           </Text>
         </SimpleGrid>

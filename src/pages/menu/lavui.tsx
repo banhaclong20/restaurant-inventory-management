@@ -170,11 +170,11 @@ const LavuiMenu = () => {
 
       <Container maxW="6xl" mb="10">
         <SimpleGrid columns={{ base: 1 }} textAlign="center" spacing={2}>
-          <Text fontSize={{ base: "xs", md: "sm" }}>
+          <Text fontSize={{ base: "xs", md: "sm" }} color="gray.800">
             *Consuming raw or undercooked meats, poultry, seafood, shellfish, or
             eggs may increase your risk of foodborne illness.
           </Text>
-          <Text fontSize={{ base: "xs", md: "sm" }}>
+          <Text fontSize={{ base: "xs", md: "sm" }} color="gray.800">
             All rolls served with sesame seeds. Please inform your server of any
             food allergies. Substitutions subject to additional charge.
           </Text>
