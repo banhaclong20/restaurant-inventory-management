@@ -6,7 +6,6 @@ import {
   Center,
   Text,
   SimpleGrid,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaFacebook, FaYelp } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
@@ -30,7 +29,7 @@ function TestimonialCard(props: TestimonialCardProps) {
       p={10}
       justifyContent="space-between"
       position="relative"
-      bg={useColorModeValue("white", "gray.800")}
+      bg="white"
       backgroundColor="aliceblue"
       _after={{
         content: '""',
@@ -81,20 +80,12 @@ export default function Testimonials() {
             p={5}
             fontSize={{ base: "3xl", md: "5xl" }}
             fontWeight="bold"
-            color={useColorModeValue("gray.700", "gray.50")}
+            color="gray.700"
           >
             You&apos;re in good company so enjoys yourself
           </chakra.h1>
-          <chakra.h2
-            p={5}
-            margin="auto"
-            fontWeight="medium"
-            color={useColorModeValue("gray.500", "gray.400")}
-          >
-            More than{" "}
-            <chakra.strong color={useColorModeValue("gray.700", "gray.50")}>
-              thousands
-            </chakra.strong>{" "}
+          <chakra.h2 p={5} margin="auto" fontWeight="medium" color="gray.500">
+            More than <chakra.strong color="gray.700">thousands</chakra.strong>{" "}
             5 stars reviews from Google Places, Yelps ...
           </chakra.h2>
         </Box>

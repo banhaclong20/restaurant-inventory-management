@@ -5,7 +5,6 @@ import {
   Text,
   Box,
   Image,
-  useColorModeValue,
   chakra,
 } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
@@ -39,7 +38,7 @@ interface ItemProps {
 const TeamItem = ({ imageURL, name, position, shortIntro }: ItemProps) => (
   <Flex p={2} w="full" alignItems="center" justifyContent="center">
     <Box
-      bg={useColorModeValue("white", "gray.800")}
+      bg="white"
       maxW="xl"
       borderWidth="1px"
       rounded="md"

@@ -7,7 +7,6 @@ import {
   Text,
   Stack,
   VStack,
-  useColorModeValue,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
@@ -48,7 +47,7 @@ const AboutUs = () => {
               color="orange.400"
               fontWeight={600}
               fontSize="sm"
-              bg={useColorModeValue("gray.50", "gray.900")}
+              bg="gray.50"
               p={2}
               alignSelf="flex-start"
               rounded="md"

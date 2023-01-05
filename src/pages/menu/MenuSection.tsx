@@ -8,7 +8,6 @@ import {
   Text,
   Container,
   SimpleGrid,
-  useColorModeValue,
 } from "@chakra-ui/react";
 
 interface ItemProps {
@@ -38,7 +37,7 @@ const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
         w={{ sm: "100%" }}
         h={{ base: "100%" }}
         direction={{ base: "row" }}
-        bg={useColorModeValue("white", "gray.900")}
+        bg="white"
         width="100%"
       >
         <Stack
@@ -61,7 +60,7 @@ const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
           <Text
             textAlign="left"
             fontSize={{ base: "xs", md: "sm" }}
-            color={useColorModeValue("gray.700", "gray.400")}
+            color="gray.700"
           >
             {desc}
           </Text>

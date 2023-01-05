@@ -11,7 +11,6 @@ import {
   Box,
   Divider,
   Badge,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
@@ -35,7 +34,7 @@ export default function Feature() {
             color="orange.400"
             fontWeight={600}
             fontSize="sm"
-            bg={useColorModeValue("gray.50", "gray.900")}
+            bg="gray.50"
             p={2}
             alignSelf="flex-start"
             rounded="md"
