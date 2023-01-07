@@ -4,6 +4,8 @@ const defaultSEOConfig = {
   titleTemplate: "%s | Oishii Restaurants",
   defaultTitle: "Oishii Restaurants",
   description: "DFW's premier Sushi and Pan-Asian Restaurant",
+  keywords:
+    "premier sushi, sushi dallas, sushi plano, sushi frisco, sushi dfw, dallas sushi, plano sushi, frisco sushi, dfw sushi",
   canonical: "https://oishiirestaurants.com",
   openGraph: {
     url: "https://oishiirestaurants.com",
@@ -15,7 +17,8 @@ const defaultSEOConfig = {
         alt: "oishiirestaurants.com og-image",
       },
     ],
-    site_name: "Oishii-Restaurants",
+    site_name: "Oishii Restaurants",
+    type: "website",
   },
   twitter: {
     cardType: "summary_large_image",
