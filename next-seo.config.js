@@ -22,10 +22,6 @@ const defaultSEOConfig = {
   },
   twitter: {
     cardType: "summary_large_image",
-    title: "Oishii - DFW's premier Sushi and Pan-Asian Restaurant",
-    description:
-      "Wide variety of sushi, sashimi and more. Best quality sushi in DFW",
-    image: "https://oishii-sushi-web.vercel.app/assets/menu/tunatower.jpg",
   },
 };
 
