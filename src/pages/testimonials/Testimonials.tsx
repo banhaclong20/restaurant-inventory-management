@@ -1,14 +1,4 @@
-import {
-  Box,
-  chakra,
-  Flex,
-  Button,
-  Center,
-  Text,
-  SimpleGrid,
-} from "@chakra-ui/react";
-import { FaFacebook, FaYelp } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import { Box, chakra, Flex, SimpleGrid } from "@chakra-ui/react";
 
 import { TESTIMONIALS } from "../../lib/constant/testimonials";
 import CTABanner from "lib/components/CTABanner";
@@ -104,45 +94,6 @@ export default function Testimonials() {
             <TestimonialCard {...cardInfo} key={cardInfo.name} />
           ))}
         </SimpleGrid>
-
-        {/* <Text fontSize="2xl" mt="10" color="gray.700">
-          View more reviews from:
-        </Text>
-        <SimpleGrid
-          columns={{ base: 1, xl: 3 }}
-          spacing="10"
-          mt={5}
-          mx="auto"
-          p="5"
-        >
-          <Button w="full" colorScheme="facebook" leftIcon={<FaFacebook />}>
-            <Center>
-              <Text>Facebook</Text>
-            </Center>
-          </Button>
-
-          <Button
-            w="full"
-            variant="outline"
-            leftIcon={<FcGoogle />}
-            colorScheme="grey.200"
-          >
-            <Center>
-              <Text>Google Places</Text>
-            </Center>
-          </Button>
-
-          <Button
-            w="full"
-            variant="outline"
-            colorScheme="red"
-            leftIcon={<FaYelp />}
-          >
-            <Center>
-              <Text>Yelp</Text>
-            </Center>
-          </Button>
-        </SimpleGrid> */}
       </Flex>
     </>
   );
