@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import { DefaultSeo } from "next-seo";
+import { NextSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -16,12 +16,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Chakra>
       <Head>
+        <meta charSet="utf-8" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
       </Head>
-      <DefaultSeo {...defaultSEOConfig} />
+      <NextSeo {...defaultSEOConfig} useAppDir />
       {pathname.includes("admin") ? (
         <Component {...pageProps} />
       ) : (
