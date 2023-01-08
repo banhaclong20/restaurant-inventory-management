@@ -19,5 +19,9 @@ module.exports = withPWA({
   },
   typescript: {
     ignoreBuildErrors: true
-  }
+  },
+  experimental: {
+    appDir: true,
+    serverComponentsExternalPackages: ["prisma", "@prisma/client"],
+  },
 });
