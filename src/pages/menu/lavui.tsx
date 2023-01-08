@@ -12,7 +12,6 @@ import {
   MenuGroup,
   MenuDivider,
 } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
 import Link from "next/link";
 
 import CTABanner from "../../lib/components/CTABanner";
@@ -75,8 +74,6 @@ const LavuiMenu = () => {
       w="full"
       className="menu-page"
     >
-      <NextSeo title="Lavui Menu" />
-
       <CTABanner
         bgImage="/assets/lavui/Porkvermicellibowl.jpg"
         height="300px"

@@ -1,5 +1,4 @@
 import { Flex, Container, SimpleGrid, Text } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
 
 import CTABanner from "../../lib/components/CTABanner";
 import ImageGallery from "../../lib/components/ImageGallery";
@@ -14,7 +13,6 @@ const Gallery = () => {
       mb={8}
       w="full"
     >
-      <NextSeo title="Gallery" />
       <CTABanner
         bgImage="/assets/gallery-bg-1.jpg"
         height="300px"

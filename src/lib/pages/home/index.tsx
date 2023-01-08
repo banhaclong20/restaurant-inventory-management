@@ -1,5 +1,4 @@
 import { Flex } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
 
 import CTABanner from "../../components/CTABanner";
 import FindLocations from "../../components/Location/FindLocations";
@@ -28,8 +27,6 @@ const Home = () => (
     mb={8}
     w="full"
   >
-    <NextSeo title="Home" />
-
     <Hero />
     <Feature />
     <CTABanner

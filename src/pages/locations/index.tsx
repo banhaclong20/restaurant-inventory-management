@@ -1,5 +1,4 @@
 import { Flex } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 
 import CTABanner from "../../lib/components/CTABanner";
@@ -40,7 +39,6 @@ const Locations = () => {
       mb={8}
       w="full"
     >
-      <NextSeo title="Locations" />
       <CTABanner
         bgImage={CTABannerContent.bgImage}
         height="500px"

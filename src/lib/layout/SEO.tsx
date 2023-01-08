@@ -8,6 +8,7 @@ import {
   SEO_OG_IMAGE,
   SEO_TWITTER_IMAGE,
   PRODUCTION_URL,
+  SEO_PAGE,
 } from "../constant/SEO";
 
 export type SEOProps = {
@@ -27,18 +28,32 @@ export const SEO = ({
   ogUrl = PRODUCTION_URL,
   twitterImage = SEO_TWITTER_IMAGE,
 }: SEOProps) => {
-  const router = useRouter();
+  const { pathname, asPath } = useRouter();
+  const page = pathname.substring(1);
+
+  const getTitle = () => {
+    switch (page) {
+      case "menu":
+      case "gallery":
+      case "about-us":
+      case "locations":
+      case "testimonials":
+        return SEO_PAGE[page].SEO_TITLE;
+      default:
+        return SEO_TITLE;
+    }
+  };
 
   return (
     <Head>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <title>{title}</title>
+      <title>{getTitle()}</title>
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content={SEO_TITLE} />
-      <meta property="og:url" content={`${ogUrl}${router.asPath}`} />
+      <meta property="og:url" content={`${ogUrl}${asPath}`} />
       <meta property="og:type" content="website" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
