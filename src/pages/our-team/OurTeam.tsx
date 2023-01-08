@@ -7,7 +7,6 @@ import {
   Image,
   chakra,
 } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
 
 import CTABanner from "../../lib/components/CTABanner";
 
@@ -87,7 +86,6 @@ const OurTeam = () => {
       mb={8}
       w="full"
     >
-      <NextSeo title="Our Team" />
       <CTABanner
         bgImage="/assets/our-team-bg1.jpg"
         height="300px"

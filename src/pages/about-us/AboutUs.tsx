@@ -9,7 +9,6 @@ import {
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
 
 import CTABanner from "../../lib/components/CTABanner";
 
@@ -23,7 +22,6 @@ const AboutUs = () => {
       mb={8}
       w="full"
     >
-      <NextSeo title="About Us" />
       <CTABanner
         bgImage="/assets/about-us-bg.jpg"
         height="300px"

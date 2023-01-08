@@ -13,7 +13,6 @@ import {
   Image,
   Tooltip,
 } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { BsFillTelephoneFill, BsDisplay } from "react-icons/bs";
@@ -75,8 +74,6 @@ export default () => {
       mb={8}
       w="full"
     >
-      <NextSeo title="WYCLIFF" />
-
       {onlineLinks?.googleMap && (
         <iframe
           src={onlineLinks.googleMap}
