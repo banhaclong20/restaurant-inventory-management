@@ -2,6 +2,7 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { Provider } from "react-redux";
 
 import { wrapper } from "../store/store";
 import { Chakra } from "lib/components/Chakra";
@@ -11,6 +12,7 @@ import "lib/styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const { pathname } = useRouter();
+  const { store, props } = wrapper.useWrappedStore(pageProps);
 
   return (
     <Chakra>
@@ -23,14 +25,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       {pathname.includes("admin") ? (
-        <Component {...pageProps} />
+        <Component {...props} />
       ) : (
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Provider store={store}>
+          <Layout>
+            <Component {...props} />
+          </Layout>
+        </Provider>
       )}
     </Chakra>
   );
 };
 
-export default wrapper.withRedux(MyApp);
+export default MyApp;
