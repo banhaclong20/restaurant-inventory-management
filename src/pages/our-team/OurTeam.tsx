@@ -15,15 +15,11 @@ const data = [
     imageURL: "/assets/Chef_Thanh_Nguyen.jpg",
     name: "Chef Thanh Nguyen",
     position: "Owner & Executive Chef",
-    shortIntro:
-      "Thanh is known for his custom sushi with special requests, and some of his most popular rolls include the #42 Roll and the G Roll.",
   },
   {
-    imageURL: "/assets/gallery-5.jpg",
+    imageURL: "/assets/chefs/Chef_Tri_Tran.jpg",
     name: "Chef Tri Tran",
-    position: "Owner & Executive Chef",
-    shortIntro:
-      "Tri Tran is executive chef at Oishii. He is a nephew and restaurant partner of owner Thanh Nguyen. His most popular rolls include the Royce Roll and Caesar Roll.",
+    position: "Chef Partner & Director of Operation",
   },
 ];
 
@@ -114,7 +110,7 @@ const OurTeam = () => {
           spacing="4"
         >
           {data.map((item) => (
-            <TeamItem {...item} />
+            <TeamItem {...item} key={item.name} />
           ))}
         </SimpleGrid>
       </Container>
