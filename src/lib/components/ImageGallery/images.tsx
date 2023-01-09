@@ -4,10 +4,6 @@ export const images = [
     caption: "Sushi Boat",
   },
   {
-    src: "/assets/menu/oishiismu.jpg",
-    caption: "Special Oishii Chef",
-  },
-  {
     src: "/assets/menu/tunatower.jpg",
     caption: "Tuna Tower",
   },

@@ -75,7 +75,7 @@ const TopHeader = () => {
       w="full"
       backgroundColor="#272c34"
     >
-      <Container maxW="3xl">
+      <Container maxW="4xl" pl="0">
         <SimpleGrid
           columns={2}
           height="50px"
