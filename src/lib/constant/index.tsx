@@ -5,6 +5,8 @@ const oishiiHours = [
   "Sun: 5PM - 10PM",
 ];
 
+const HAPPY_HOUR = "Happy Hour";
+
 const LOCATIONS = [
   {
     name: "Oishii - Wycliff",
@@ -25,12 +27,8 @@ const LOCATIONS = [
     businessHours: oishiiHours,
     promotions: [
       {
-        type: "Promotion",
-        desc: "Celebrate with $5 Mimosas during lunch from 11 AM-4 PM",
-      },
-      {
-        type: "Happy Hours",
-        desc: "All day Wednesday - 50% off bottles of wines, cold sake and carafes of hot sake",
+        type: HAPPY_HOUR,
+        desc: "50% off bottles of wine all day Wednesday",
       },
     ],
   },
@@ -53,8 +51,8 @@ const LOCATIONS = [
     businessHours: oishiiHours,
     promotions: [
       {
-        type: "Promotion",
-        desc: "Celebrate with $5 Mimosas during lunch from 11 AM-4 PM",
+        type: HAPPY_HOUR,
+        desc: "50% off bottles of wine all day Monday",
       },
     ],
   },
@@ -77,8 +75,8 @@ const LOCATIONS = [
     businessHours: oishiiHours,
     promotions: [
       {
-        type: "Happy Hours",
-        desc: "All day Wednesday - 50% off bottles of wines, cold sake and carafes of hot sake",
+        type: HAPPY_HOUR,
+        desc: "50% off bottles of wine all day Tuesday",
       },
     ],
   },
