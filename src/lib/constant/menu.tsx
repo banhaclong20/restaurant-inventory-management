@@ -1294,216 +1294,272 @@ const LAVUI_MENU = {
     {
       name: "Shrimp & Pork Dumplings (6)",
       desc: "shrimp, pork, daikon, onions, dumpling sauce",
+      price: 8.5,
     },
     {
       name: "LaVui Shrimp Dumplings (5)",
       desc: "shrimp, daikon, onions, dumpling sauce",
+      price: 7.5,
     },
     {
       name: "Shrimp Spring Rolls (2)",
       desc: "shrimp, lettuce, vermicelli, cilantro, peanut sauce",
+      price: 6.5,
     },
     {
       name: "Shrimp & Pork Egg Rolls (2)",
       desc: "shrimp, pork, carrots, noodles, onions, taro, fish sauce",
+      price: 6,
     },
     {
       name: "Crispy Rocky Shrimp",
       desc: "shrimp, spicy mayo, lemon, shredded lettuce",
+      price: 13.5,
     },
     {
       name: "Tuna Lavui",
       desc: "tuna, shallots, garlic, truffle oil, Jalapeño, soy sauce",
+      price: 15,
       isRaw: true,
     },
     {
       name: "Seared Salmon Lavui",
       desc: "salmon, avocado, lemon, green sauce - jalapeño, cilantro, oil",
+      price: 15,
       isRaw: true,
     },
     {
       name: "Yellowtail Lavui",
       desc: "yellowtail, parsley sauce - parmesan cheese, cilantro, parsley, oil",
+      price: 15,
       isRaw: true,
     },
     {
-      name: "Edamame | Spicy Edamame",
-      desc: "steamed soybeans, kosher salt (plain or spicy)",
+      name: "Edamame",
+      desc: "steamed soybeans, kosher salt (plain)",
+      price: 5,
+    },
+    {
+      name: "Spicy Edamame",
+      desc: "steamed soybeans, kosher salt (spicy)",
+      price: 6,
     },
   ],
   ENTREES: [
     {
       name: "Shaken Beef",
       desc: "beef tenderloin, onions, tomatoes, lettuce, peppers",
+      price: 18.5,
     },
     {
       name: "Crispy Shrimp in Sea Salt",
       desc: "shrimp, jalapeño, garlic, onions, tomatoes, lettuce, parmesan cheese",
+      price: 15,
     },
     {
       name: "Chicken Fried Rice",
       desc: "chicken, egg, ginger, carrots, peas, scallions",
+      price: 13.5,
     },
     {
       name: "Clay Pot Chicken",
       desc: "chicken, quail egg, ginger, lemongrass, onions, jalapeño, fish sauce",
+      price: 15,
     },
     {
       name: "Clay Pot Black Cod",
       desc: "black cod, pork belly, garlic, lemongrass, onions, fish sauce",
+      price: 18,
     },
     {
       name: "Curry Chicken with Baguette",
       desc: "chicken, pototoes, onions, carrots, yellow curry, coconut milk, bay leaf",
+      price: 15,
     },
     {
       name: "Beef Stew with Baguette or Noddles",
       desc: "beef, carrot, lemongrass, star anise, ginger, garlic",
+      price: 15,
     },
     {
       name: "Black Cod Sweet & Sour Soup (Canh Chua)",
       desc: "black cod, garlic, tamarind, pineapple, taro stems, okra, fish sauce",
+      price: 18,
     },
     {
       name: "Buddhist Delight & Crispy Tofu",
       desc: "tofu, carrots, onions, mushrooms, snow peas, clear noodles",
+      price: 14,
     },
   ],
   BANHMI: [
     {
       name: "Pork Banh Mi",
       desc: "grilled pork",
+      price: 7.5,
     },
     {
       name: "Chicken Banh Mi",
       desc: "grilled chicken",
+      price: 7.5,
     },
     {
       name: "Beef Banh Mi",
       desc: "brisket, brown sauce",
+      price: 8.5,
     },
     {
       name: "Roasted Duck Banh Mi",
       desc: "roasted duck, truffle oil",
+      price: 12,
     },
     {
       name: "LaVui Special Banh Mi",
       desc: "brisket, pork belly, egg",
+      price: 11,
     },
   ],
   NOODLE_DISHED: [
     {
       name: "Beef Flat Noodles",
       desc: "beef tenderloin, rice noodles, brown sauce",
+      price: 16.5,
     },
     {
       name: "Shrimp Garlic Noodles",
       desc: "shrimp, egg noodles, bok choy, shitake mushrooms, parmesan cheese",
+      price: 13.5,
     },
     {
       name: "Chicken Spicy Noodles",
       desc: "chicken, rice noodles, spicy fish sauce",
+      price: 12.5,
     },
     {
       name: "Chicken Curry Noodles",
       desc: "chicken, rice noodles, yellow curry sauce",
+      price: 12.5,
     },
   ],
   SALADS: [
     {
       name: "Shrimp with Lotus Stems",
       desc: "shrimp, lotus stems, citrus dressing",
+      price: 14,
     },
     {
       name: "Salmon Carpaccio Salad*",
       desc: "salmon, lemon, citrus dressing",
+      price: 15,
       isRaw: true,
     },
     {
       name: "Chicken Cabbage Salad",
       desc: "chicken breast, shredded cabbage, fish sauce dressing",
+      price: 14,
     },
   ],
   PHO: [
     {
       name: "Pho Ga",
       desc: "chicken breast",
+      price: 13.5,
     },
     {
       name: "Pho Tai Bo Vien",
       desc: "rare beef, meatballs",
+      price: 14.5,
     },
     {
       name: "Pho Dac Biet",
       desc: "rare beef, beef brisket, meatballs",
+      price: 15.5,
     },
   ],
   BUN: [
     {
       name: "Beef Vermicelli (Bun Bo Xao)",
       desc: "sauteed beef tenderloin, garlic, onions, scallions",
+      price: 13.5,
     },
     {
       name: "Chicken Vermicelli (Bun Ga Nuong)",
       desc: "grilled chicken, scallion oil",
+      price: 12.5,
     },
     {
       name: "Pork Vermicelli (Bun Thit Nuong)",
       desc: "grilled pork, scallion oil",
+      price: 12.5,
     },
     {
       name: "Tofu Vermicelli (Bun Dau Hu Chien)",
       desc: "fried tofu, garlic, onions, scallions",
+      price: 11.5,
     },
   ],
   ADDITIONS: [
     {
       name: "Chicken",
+      price: 3,
     },
     {
       name: "Pork",
+      price: 3,
     },
     {
       name: "Beef",
+      price: 4,
     },
     {
       name: "Shrimp",
+      price: 3,
     },
     {
       name: "Tofu",
+      price: 2,
     },
     {
       name: "Fried Egg",
+      price: 1.5,
     },
   ],
   BEVERAGES: [
     {
       name: "Vietnamese Iced Coffee",
+      price: 4.5,
     },
     {
       name: "Boba Tea - Passionfruit Green Tea",
       desc: "Add Topping: Tapioca Boba",
+      price: 4.5,
     },
     {
       name: "Boba Tea - Strawberry Green Tea",
       desc: "Add Topping: Tapioca Boba",
+      price: 4.5,
     },
     {
       name: "Boba Tea - Taro Milk Tea",
       desc: "Add Topping: Tapioca Boba",
+      price: 4.5,
     },
     {
       name: "Boba Tea - Thai Tea",
       desc: "Add Topping: Tapioca Boba",
+      price: 4.5,
     },
     {
       name: "Soft Drinks",
+      price: 1.5,
     },
     {
       name: "Bottled Water",
+      price: 1,
     },
     {
       name: "Iced Tea or Hot Tea",
+      price: 2.5,
     },
   ],
 };
