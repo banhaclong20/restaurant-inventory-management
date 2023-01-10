@@ -13,6 +13,7 @@ import {
 interface ItemProps {
   name: string;
   desc: string;
+  price: number;
   image: string;
   badge: string;
   isRaw: boolean;
@@ -27,7 +28,20 @@ interface MenuSectionProps {
   isLavui: boolean;
 }
 
-const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
+const formatter = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
+
+const Item = ({
+  name,
+  desc,
+  price,
+  image,
+  badge,
+  isRaw,
+  moreSpace,
+}: ItemProps) => {
   const imageHeight = moreSpace ? "143px" : "124px";
   return (
     <Center p={{ base: 1, md: 2 }} width="100%">
@@ -48,24 +62,34 @@ const Item = ({ name, desc, image, badge, isRaw, moreSpace }: ItemProps) => {
           alignItems="left"
           p={4}
         >
-          <Heading
-            fontSize={{ base: "sm", md: "md" }}
-            fontFamily="body"
-            color="gray.800"
-          >
-            {name} {isRaw ? "* " : " "}
-            <Badge
-              variant="solid"
-              colorScheme={badge === "Recommended" ? "orange" : "green"}
-              fontSize={{ base: "9px", md: "xs" }}
+          <Flex justifyContent="space-between" gap="2">
+            <Heading
+              fontSize={{ base: "sm", md: "md" }}
+              fontFamily="body"
+              color="gray.800"
             >
-              {badge}
-            </Badge>
-          </Heading>
+              {name} {isRaw ? "* " : " "}
+              <Badge
+                variant="solid"
+                colorScheme={badge === "Recommended" ? "orange" : "green"}
+                fontSize={{ base: "9px", md: "xs" }}
+              >
+                {badge}
+              </Badge>
+            </Heading>
+            <Text
+              textAlign="left"
+              fontSize={{ base: "xs", md: "sm" }}
+              color="gray.800"
+            >
+              {isNaN(price) ? price : formatter.format(price)}
+            </Text>
+          </Flex>
           <Text
             textAlign="left"
             fontSize={{ base: "xs", md: "sm" }}
             color="gray.700"
+            pr={{ base: "3rem", md: "4rem" }}
           >
             {desc}
           </Text>

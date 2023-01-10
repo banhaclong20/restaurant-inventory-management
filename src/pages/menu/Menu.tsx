@@ -56,6 +56,9 @@ const MeneIcon = () => (
         <Link href="/menu#wines-sake-menu">
           <MenuItem icon={<SmallAddIcon />}>Wine | Sake Menu</MenuItem>
         </Link>
+        <Link href="/assets/OishiiMenu.pdf">
+          <MenuItem icon={<SmallAddIcon />}>PDF Menu</MenuItem>
+        </Link>
       </MenuGroup>
       <MenuDivider />
       <Link href="/menu#">

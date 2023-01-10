@@ -70,6 +70,10 @@ const NAV_ITEMS = [
         subLabel: "Vietnamese Restaurant",
         href: "/menu/lavui",
       },
+      {
+        label: "PDF Menu",
+        href: "/assets/OishiiMenu.pdf",
+      },
     ],
   },
   {
