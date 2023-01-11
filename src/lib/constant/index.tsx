@@ -31,6 +31,7 @@ const LOCATIONS = [
         desc: "50% off bottles of wine all day Wednesday",
       },
     ],
+    promoBannerText: "New location coming soon",
   },
   {
     name: "Oishii - SMU Blvd",
@@ -55,6 +56,7 @@ const LOCATIONS = [
         desc: "50% off bottles of wine all day Monday",
       },
     ],
+    promoBannerText: "New menu coming soon",
   },
   {
     name: "Oishii - Plano",
@@ -79,6 +81,7 @@ const LOCATIONS = [
         desc: "50% off bottles of wine all day Tuesday",
       },
     ],
+    promoBannerText: "New location coming soon",
   },
   {
     name: "LAVUI - Maple Ave",
@@ -103,6 +106,7 @@ const LOCATIONS = [
       "Sat: 11AM- 11PM",
       "Sun: 3PM - 11PM",
     ],
+    promoBannerText: "New menu coming soon",
   },
 ];
 
