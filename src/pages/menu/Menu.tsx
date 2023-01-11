@@ -23,6 +23,7 @@ import {
   DINNER_MENU,
   WINES,
 } from "../../lib/constant/menu";
+import PromoBanner from "lib/components/PromoBanner";
 
 import MenuSection from "./MenuSection";
 import WineList from "./WineList";
@@ -85,6 +86,7 @@ const Menu = () => {
         headingText="Our Menu"
         id="sushi-sashimi"
       />
+      <PromoBanner />
       <br />
       <MenuSection category="Sushi" data={SUSHI} />
       <MenuSection category="Sashimi" data={SASHIMI} />
