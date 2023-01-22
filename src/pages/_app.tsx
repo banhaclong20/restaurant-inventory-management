@@ -23,7 +23,7 @@ const MyApp = ({
     <Chakra>
       <SEO />
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-PDMSMKVP1Q"
+        src="https://www.googletagmanager.com/gtag/js?id=G-CESWP17DRQ"
         strategy="lazyOnload"
       />
       <Script id="google-analytics" strategy="lazyOnload">
@@ -31,7 +31,7 @@ const MyApp = ({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-PDMSMKVP1Q', {
+            gtag('config', 'G-CESWP17DRQ', {
             page_path: window.location.pathname,
             });
           `}
