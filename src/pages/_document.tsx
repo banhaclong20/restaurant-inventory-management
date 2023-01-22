@@ -2,7 +2,6 @@
 import { ColorModeScript } from "@chakra-ui/react";
 import type { DocumentContext } from "next/document";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 import Meta from "lib/components/Meta";
 import customTheme from "lib/styles/theme";
@@ -33,20 +32,6 @@ class MyDocument extends Document {
           <Meta />
         </Head>
 
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-PDMSMKVP1Q"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-PDMSMKVP1Q', {
-            page_path: window.location.pathname,
-            });
-          `}
-        </Script>
         <body>
           <ColorModeScript
             initialColorMode={customTheme.config?.initialColorMode}
