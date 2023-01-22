@@ -26,7 +26,11 @@ const PromoBanner = () => {
         justifyContent="center"
       >
         <Box alignItems="center" display="flex">
-          <Text color="white" fontWeight="600">
+          <Text
+            color="white"
+            fontWeight="600"
+            fontSize={{ base: "xs", md: "md" }}
+          >
             <BellIcon
               boxSize={6}
               style={{ position: "relative", top: "-2px", marginRight: "5px" }}
