@@ -247,7 +247,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack bg="white" p={4} display={{ md: "none" }}>
+    <Stack bg="white" p={4} display={{ lg: "none" }}>
       {[...NAV_ITEMS, ...NAV_ITEMS_RIGHT].map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -270,9 +270,9 @@ export default function DesktopNavWithSubnavigation() {
           align="center"
         >
           <Flex
-            flex={{ base: 1, md: "auto" }}
+            flex={{ base: 1, lg: "auto" }}
             ml={{ base: -2 }}
-            display={{ base: "flex", md: "none" }}
+            display={{ base: "flex", lg: "none" }}
           >
             <IconButton
               onClick={onToggle}
@@ -288,9 +288,9 @@ export default function DesktopNavWithSubnavigation() {
               color="gray.600"
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: "left", md: "center" }}>
+          <Flex flex={{ base: 1 }} justify={{ base: "left", lg: "center" }}>
             <Flex
-              display={{ base: "none", md: "flex" }}
+              display={{ base: "none", lg: "flex" }}
               mr={10}
               alignItems="center"
             >
@@ -298,7 +298,7 @@ export default function DesktopNavWithSubnavigation() {
             </Flex>
             <Flex>
               <Image
-                width={{ base: "150px", md: "270px" }}
+                width={{ base: "150px", lg: "270px" }}
                 alt="Oishii Restaurants Logo"
                 src="/assets/oishii-logo.png"
                 className="oishii-logo-img"
@@ -306,7 +306,7 @@ export default function DesktopNavWithSubnavigation() {
               />
             </Flex>
             <Flex
-              display={{ base: "none", md: "flex" }}
+              display={{ base: "none", lg: "flex" }}
               ml={10}
               alignItems="center"
             >
@@ -314,9 +314,9 @@ export default function DesktopNavWithSubnavigation() {
             </Flex>
           </Flex>
           <Flex
-            flex={{ base: 1, md: "auto" }}
-            display={{ base: "flex", md: "none" }}
-            justify={{ base: "right", md: "center" }}
+            flex={{ base: 1, lg: "auto" }}
+            display={{ base: "flex", lg: "none" }}
+            justify={{ base: "right", lg: "center" }}
           />
         </Flex>
 
