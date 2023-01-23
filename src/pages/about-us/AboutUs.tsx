@@ -23,7 +23,7 @@ const AboutUs = () => {
       w="full"
     >
       <CTABanner
-        bgImage="/assets/about-us-bg.jpg"
+        bgImage="/assets/CTA_bg_sushi-roll.jpeg"
         height="300px"
         headingText="About Us"
       />
@@ -137,7 +137,7 @@ const AboutUs = () => {
         <Flex
           w="full"
           h="200px"
-          backgroundImage="url(/assets/sushi-small-bg.jpg)"
+          backgroundImage="url(/assets/CTA_bg_sashimi.jpeg)"
           backgroundSize="cover"
           backgroundPosition="center center"
         >

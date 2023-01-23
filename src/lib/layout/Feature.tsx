@@ -99,7 +99,7 @@ export default function Feature() {
             <Image
               rounded="md"
               alt="feature image"
-              src="/assets/feature-sushi.jpg"
+              src="/assets/menu/FlowerRoll.jpg"
               objectFit="cover"
             />
             <Box
@@ -119,7 +119,7 @@ export default function Feature() {
             <Image
               rounded="md"
               alt="feature image"
-              src="/assets/feature-sashimi.jpg"
+              src="/assets/menu/SushiSME.jpg"
               objectFit="cover"
             />
             <Box
@@ -139,7 +139,7 @@ export default function Feature() {
             <Image
               rounded="md"
               alt="feature image"
-              src="/assets/feature-specialty.jpg"
+              src="/assets/menu/PokeRoll.jpg"
               objectFit="cover"
             />
             <Box
