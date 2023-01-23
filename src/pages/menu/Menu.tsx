@@ -81,7 +81,7 @@ const Menu = () => {
       className="menu-page"
     >
       <CTABanner
-        bgImage="/assets/bluefin-sushi.jpg"
+        bgImage="/assets/CTA_bg_menu.jpeg"
         height="300px"
         headingText="Our Menu"
         id="sushi-sashimi"
@@ -91,7 +91,7 @@ const Menu = () => {
       <MenuSection category="Sushi" data={SUSHI} />
       <MenuSection category="Sashimi" data={SASHIMI} />
       <CTABanner
-        bgImage="/assets/feature-sushi-bg.jpg"
+        bgImage="/assets/CTA_bg_menu_1.jpeg"
         height="200px"
         headingText="Our Special Rolls"
         id="special-rolls"

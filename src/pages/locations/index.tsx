@@ -18,7 +18,7 @@ const Locations = () => {
     CTABannerContent.headingText = "Promotions";
     CTABannerContent.descText =
       "Select location to view our Promotion/Happy Hours";
-    CTABannerContent.bgImage = "/assets/promotion-bg.jpg";
+    CTABannerContent.bgImage = "/assets/CTA_bg_appetizer.jpeg";
   } else if (from === "contact") {
     CTABannerContent.headingText = "Contact Us";
     CTABannerContent.descText = "Select location to get in touch with Oishii";
@@ -27,7 +27,7 @@ const Locations = () => {
     CTABannerContent.headingText = "Get Reservation | Order Online";
     CTABannerContent.descText =
       "Select your closest location to have more options";
-    CTABannerContent.bgImage = "/assets/promotion-bg.jpg";
+    CTABannerContent.bgImage = "/assets/CTA_bg_appetizer.jpeg";
   }
 
   return (
